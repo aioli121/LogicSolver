@@ -1,4 +1,5 @@
 #!/usr/bin/bash
 
 mkdir -p build
-g++ experiments/sample.cpp -o build/sample -g -Werror
+mkdir -p build/debug
+g++ src/main.cpp -o build/logic_solver -I./src -g -Werror -Wall

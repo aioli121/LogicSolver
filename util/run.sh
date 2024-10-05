@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
 cd build
-./sample
+./logic_solver

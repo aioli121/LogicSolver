@@ -49,3 +49,32 @@ Clues simplified
     2   Difference_EvenDist({1, 0}, -1, 0, {2, 0})
     3   Difference_EvenDist({2, 3}, +1, 0, {1, 2})
     4   Single_Match({1, 0}, [{0, 1}, {2, 2}])
+
+Actions
+    From clues
+        Association([{0, 3}, {1, 1}])
+            Mark Association
+                Init and register full line assoc trigger
+            Mark Disassociations
+                Init and register full line disassoc trigger
+            Handle triggers somewhere
+        Association([{0, 2}, {1, 0}])
+            Mark Association
+                Init and register full line assoc trigger
+            Mark Disassociations
+                Init and register full line disassoc trigger
+            Handle triggers somewhere
+        Difference_EvenDist({1, 0}, -1, 0, {2, 0})
+        Difference_EvenDist({2, 3}, +1, 0, {1, 2})
+        Single_Match({1, 0}, [{0, 1}, {2, 2}])
+
+AssociationClue
+    For each field_id pair
+        Match cell value of pair
+            Case Unmarked
+                Mark cell value Associated
+                Enqueue AssociationAction
+            Case Associated
+                Nothing
+            Case Disassociated
+                Exit with Logic Failure

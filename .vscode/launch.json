@@ -8,7 +8,7 @@
             "name": "(gdb) ao.debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/sample",
+            "program": "${workspaceFolder}/build/logic_solver",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}/build",
