@@ -5,17 +5,30 @@
 
 #include "field_id_type.hpp"
 
-namespace ao::logic_solver_internal {
-    class mark_action_queue_type {
+namespace ao::logic_solver_internal
+{
+    class mark_action_queue_type
+    {
         public:
-            mark_action_queue_type(): action_queue() {}
+            mark_action_queue_type()
+            : action_queue()
+            {}
 
-            void enqueue_association_action(field_id_type field_ids[2]) {}
+            void
+            enqueue_association_action(
+                field_id_type field_ids[2]
+            )
+            {}
 
-            void enqueue_disassociation_action(field_id_type field_ids[2]) {}
+            void
+            enqueue_disassociation_action(
+                field_id_type field_ids[2]
+            )
+            {}
 
         private:
-            class mark_action_type {
+            class mark_action_type
+            {
                 public:
             };
 

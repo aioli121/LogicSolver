@@ -62,7 +62,7 @@ class experimental_class_1 {
 class logic_spec {
     public:
 
-    
+
     private:
         std::size_t list_count;
         std::size_t field_count_per_list;
@@ -75,7 +75,7 @@ class logic_spec {
 /*
 namespace experiments {
 
-    
+
     namespace old {
         class field_id {
             public:
@@ -123,7 +123,7 @@ namespace experiments {
                         }
                     }
                 }
-            
+
             private:
                 std::vector<field_id> field_ids;
         };
@@ -133,7 +133,7 @@ namespace experiments {
                 disassociation_test_clue(std::vector<field_id> &&field_ids)
                     : field_ids(std::move(field_ids))
                 {}
-            
+
             private:
                 std::vector<field_id> field_ids;
         };
@@ -144,7 +144,7 @@ namespace experiments {
                     : solitary_field_id(solitary_field_id)
                     , possible_match_ids(std::move(possible_match_ids))
                 {}
-            
+
             private:
                 field_id solitary_field_id;
                 std::vector<field_id> possible_match_ids;
@@ -158,7 +158,7 @@ namespace experiments {
                     , valued_list_id(valued_list_id)
                     , second_listed_id(second_listed_id)
                 {}
-            
+
             private:
                 field_id first_listed_id;
                 int signed_diff;
@@ -184,7 +184,7 @@ namespace experiments {
                 std::vector<std::unique_ptr<test_full_line_trigger>> full_line_triggers;
         };
     }
-    
+
 
     class field_id_type {
         public:
@@ -211,7 +211,7 @@ namespace experiments {
 
             std::queue<std::unique_ptr<mark_action_type>> action_queue;
     };
-    
+
     class solution_context_type {
         public:
             solution_context_type(unsigned int list_count, unsigned int field_count_per_list)
@@ -261,7 +261,7 @@ namespace experiments {
 
                     return {};
                 }
-            
+
             private:
                 std::vector<field_id_type> const field_ids;
         };
@@ -273,7 +273,7 @@ namespace experiments {
                 std::unique_ptr<apply_failure> apply(solution_context_type &solution_context) override {
                     return {};
                 }
-            
+
             private:
                 field_id_type first_field_id;
                 int index_difference;
@@ -287,7 +287,7 @@ namespace experiments {
                 std::unique_ptr<apply_failure> apply(solution_context_type &solution_context) override {
                     return {};
                 }
-                
+
             private:
                 field_id_type first_field_id;
                 std::vector<field_id_type> potential_match_field_ids;
