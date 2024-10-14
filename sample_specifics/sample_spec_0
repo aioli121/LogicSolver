@@ -46,9 +46,9 @@ Lists simplified
 Clues simplified
     0   Association([{0, 3}, {1, 1}])
     1   Association([{0, 2}, {1, 0}])
-    2   Difference_EvenDist({1, 0}, -1, 0, {2, 0})
-    3   Difference_EvenDist({2, 3}, +1, 0, {1, 2})
-    4   Single_Match({1, 0}, [{0, 1}, {2, 2}])
+    2   Offset({1, 0}, -1, 0, {2, 0})
+    3   Offset({2, 3}, +1, 0, {1, 2})
+    4   Either({1, 0}, [{0, 1}, {2, 2}])
 
 Actions
     From clues
