@@ -34,5 +34,4 @@ namespace ao::logic_solver_internal::validations::list_count {
 			throw too_few_exception_type(list_count);
 		}
 	}
-
 }

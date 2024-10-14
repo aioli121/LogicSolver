@@ -15,12 +15,14 @@ namespace ao::logic_solver_internal {
 		};
 
 		class mark_associated_action_type : public marking_action_type {
+			public:
 			void evaluate() const override {
 				// TODO
 			}
 		};
 
 		class mark_disassociated_action_type : public marking_action_type {
+			public:
 			void evaluate() const override {
 				// TODO
 			}
